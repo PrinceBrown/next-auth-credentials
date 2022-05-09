@@ -31,7 +31,7 @@ export default NextAuth({
           throw new Error("No User Found")
         }
         if (adminUser.accessType != 'system-agent-access') {
-          // console.log("=========NO USER WITH EMAIL FOUND In DB ========")
+          // console.log("=========ACCESS NOT GRANTED BY SUPER ADMIN ========")
           throw new Error("You Do Not Have Permission To Access This Portal")
         }
 
